@@ -1,0 +1,10 @@
+#slideshow {
+    display: flex;
+}
+.slide-element {
+    width: 200px;
+    height: 300px;
+    background-color: #ccc;
+
+    margin: 10px;
+}
