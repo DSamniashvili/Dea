@@ -1,0 +1,145 @@
+/* Footer */
+
+textarea, input { outline: none; -webkit-appearance: none;}
+
+#footer-container {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+#footer-image {
+    background: url('/imgs/background.png') bottom;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 100%;
+    background-size: cover;
+    background-size: 100%;
+    opacity: .2;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contain-footer {
+    width: 70%;
+    height: auto;
+    max-height: 400px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.subscribe {
+    width: 100%;
+    margin: 0 auto;
+}
+.subscribe h1 {
+    color: #23334d;
+    font-size: 28pt;
+}
+.input {
+    width: 100%;
+    margin: 50px 0;
+}
+.input button {
+    padding: 13px 20px;
+    border-radius: 24px;
+    margin-left: -90px;
+    border-width: 0;
+    background-color: #54d7b7;
+    color: #fff;
+}
+
+.input input {
+   width: 500px;
+   height: 40px;
+   border-radius: 40px;
+   padding: 0 20px;
+   border-width: 0;
+}
+
+
+.footer_bottom_wrapper {
+    width: 100%;
+/* 
+    display: flex;
+    justify-content: space-between; */
+}
+
+.socials_wrap {
+    margin-top: 30px;
+    display: flex;
+}
+
+.ul-wrapper {
+    width: 60%;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.column {
+    padding: 0 50px;
+    list-style-type: none;
+    text-align: left;
+}
+.column li {
+    padding: 6px 0;
+}
+.header-li {
+    padding: 12px 0 !important;
+}
+
+.header-li h4 {
+    color: #26334e;
+}
+.column li a {
+    text-decoration: none;
+    color: #7a8398;
+    font-size: 10pt;
+}
+
+.follow_us {
+    width: 40%;
+    margin-top: 60px;
+    color: #22304c;
+}
+
+.follow_us h1 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.follow_us h4 {
+    width: 40%;
+}
+.follow {
+    list-style-type: none;
+    width: 60%;
+    display: flex;
+}
+.follow a {
+    text-decoration: none;
+    /* float: left; */
+    
+    
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    /* padding: 5px 8px; */
+    display: inline-block;
+    margin:0 auto;
+    line-height: 30px;
+    
+}

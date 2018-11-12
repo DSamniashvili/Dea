@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+#wrapper {
+    width: 100%;
+    /* width: 1920px; */
+    height: auto;
+
+}
+#header {
+    height: auto; 
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#top--top {
+    width: 100%;
+    height: auto;
+}
+.top-container {
+    width: 78%;
+    height: auto;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.left--top--top {
+   height: 40px;
+   background-color: #f0f0f0;
+}
+
+.four--top {
+    box-sizing: border-box;
+    width: 40px;
+    height: 100%;
+    float: left;
+    list-style-type: none;
+    margin-left: 1px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.four--top:first-child {
+    margin: 0;
+}
+.four--top img {
+    width: 30px;
+    height: 30px;
+    display:block;
+    margin:auto;
+    margin-top: 8px;
+}
+.middle--top--top {
+    height: 40px;
+    background-color: #fff;
+}
+.logo img {
+    display: block;
+    margin: auto;
+}
+
+.right--top--top {
+    height: 40px;
+    background-color: #f0f0f0;
+}
+
+.right-box{
+    height: 100%;
+    line-height: 50px;
+    color: #777777;
+    background-color: #fff;
+    display: block;
+    float: left;
+
+    padding: 0 5px;
+}
+.currency {
+    margin-right: 1px;
+}
+.language {
+    margin-right: 1px;
+}
+#middle--top {
+    width: 100%;
+    height: 50px;
+    background-color: #f0f0f0;
+
+    display: flex;     
+}
+#menu--bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%; 
+}
+.menu {
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.menu a {
+    color: #5ac0ed;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#bottom--top {
+    width: 100%;
+    height: 75px;
+    background-color: #757d86;
+    /* display: flex; */
+}
+.bottom-top-container {
+    width: 78%;
+    margin: 0 auto;
+}
+.bottom-top-container span {
+    color: #fff;
+    line-height: 75px;
+}
+
+@media screen and (max-width: 600px) {
+    .top-container {
+      justify-content: center;
+    }
+  }

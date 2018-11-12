@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Fira Sans Condensed';
+}
+
+#container {
+    background-image: url('/imgs/background.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-size: 100%;
+    
+
+
+    display: flex;
+    flex-flow: row wrap;
+}
+#header {
+    width: 100%;
+    height: auto;
+}
+#menus-wrapper {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+}
+.menus {
+    list-style-type: none;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between
+}
+.menu-item {
+    display: block;
+    width: 125px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.menu-item a {
+    text-decoration: none;
+    line-height: 100px;
+    color: #fff;
+    font-size: 12pt;
+    
+}
+.menu-item:nth-child(4) {
+    width: auto;
+    padding: 20px;
+    font-size: 30pt;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+#middle {
+    max-width: 300px;
+    height: 100px;
+    margin:  0 auto;
+}
+
+.text, .heading  h1{
+    color: #fff;
+    text-align: center;
+}
+.heading h1 {
+    font-size: 50pt;
+}
+
+
+#book-now {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+.button {
+    width: 10%;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
