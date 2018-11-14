@@ -1,7 +1,10 @@
 // Slideshow
 
-let slideshow = document.getElementById('slideshow')
+let slideshow = document.getElementById('slideshow');
 
+
+let rightArrow = document.getElementsByClassName('right_arrow')[0];
+let slides = document.getElementsByClassName('slide-element');
 
 class Slideshow {
     constructor(n, width, height, textArr) {
@@ -32,3 +35,26 @@ class Slideshow {
 
 let slideS = new Slideshow(4, 300, 200, ['Bankok', 'Singapure', 'Tbilisi', 'Khashuri']);
 slideS.generateSlideshow();
+
+
+
+let slidesArr = [...slides];
+
+let timesClicked = 0;
+function moveLeft() {
+    timesClicked++;
+
+    if (timesClicked % 2 !== 0) {
+        console.log('kentia');
+            slideshow.classList.add('moved_left')
+        
+    }
+    else {
+        slideshow.classList.remove('moved_Left')
+    }
+    console.log(timesClicked);
+}
+
+
+// document.getElementById('slides').style.marginLeft = 
+// (parseInt(document.getElementById('slides').style.marginLeft, 10) - 100) + 'px';

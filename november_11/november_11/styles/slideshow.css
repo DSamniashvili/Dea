@@ -1,3 +1,8 @@
+#slideshow-wrapper {
+    width: 560px;
+    position: relative;
+}
+
 #slideshow {
     /* display: flex; */
     height: 320px;
@@ -6,25 +11,26 @@
     flex-wrap: nowrap;
     overflow-x: auto;
   
-    width: 650px;
+    width: 560px;
    
 }
 
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
+#slideshow::-webkit-scrollbar {
+    display: none;
+    width: 0px;  /*remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
-}
+} 
   
 .slide-element {
     width: 200px;
     height: 300px;
     background-color: #ccc;
-    margin: 10px;
+    margin: 10px 20px;
 
     /* display: inline-block; */
     flex: 0 0 auto;
-
 }
+
 
 .slide-text {
    color: #fff;
@@ -52,4 +58,58 @@
     background: url(../imgs/Gallery/Italy.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+/* .left_arrow {
+    width: 40px;
+    height: 320px;
+    position: absolute;
+}
+.fa-arrow-left{
+    width: 100%;
+    height: 40px;
+    margin-top: 150px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+
+    border-radius: 40px;
+    border: 1px solid #ccc;
+} */
+
+.left_arrow {
+    width: 40px;
+    height: 40px;
+    margin-top: 150px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    position: absolute;
+
+}
+
+
+
+.right_arrow {
+    width: 40px;
+    height: 40px;
+    margin-top: 150px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+
+    border-radius: 40px;
+    border: 1px solid #ccc;
+
+
+    position: absolute;
+    right: 0;
+    margin-right: -20px;
+}
+
+.moved_left {
+    margin-right: 10px;
+    background-color: red;
 }
