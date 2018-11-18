@@ -2,6 +2,7 @@ import React from 'react';
 
 import Heading from '../OtherComponents/Heading'
 import Icons from '../OtherComponents/Icons'
+import Button from '../OtherComponents/Button'
 
 const Slider = () => {
     return (
@@ -12,8 +13,8 @@ const Slider = () => {
                     <Icons className={'chart-bar'} />
                     <Heading className={'h3'} textContent={'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature'} />
                 </div>
-                {/* <div className=" head_ head_learn_more"><span>Learn More</span></div> */}
-                <Heading textContent="LEARN MORE" className='button' />
+                
+                <Button className='button learn_more' textContent="LEARN MORE" />
                 <ul className="head_ head_dots">
                     <li className="dot"></li>
                     <li className="dot"></li>
