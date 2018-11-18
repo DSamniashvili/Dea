@@ -8,8 +8,8 @@
 
 .all {
 
-  /* background-image: url('../public/imgs/portfolio.jpg'); */
-  /* background-size: 300px 150px; */
+  background-image: url('/imgs/portfolio.jpg');
+  background-size: 300px 150px;
   width: 100%;
   height: 1500px;
 
@@ -72,6 +72,7 @@ background-size: 90%;
   color: #58558a;
   font-size: 12px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .login {
   display: flex;
@@ -83,7 +84,7 @@ background-size: 90%;
   
 }
 
-.person-wrapper {
+.user-wrapper {
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -93,7 +94,7 @@ background-size: 90%;
   align-items: center;
   
 }
-.person {
+.icon_user {
   
   width: 30px;
   height: 30px;
@@ -102,10 +103,9 @@ background-size: 90%;
   
   display: block;
   margin: auto;
-  
 }
 
-.person i {
+.icon_user i {
   line-height: 30px;
   margin-left: 8px;
   color: #fff;
@@ -114,21 +114,10 @@ background-size: 90%;
 .login h3 {
   margin: 0 10px;
 }
-/* 
-.head_slider {
-  width: 50%;
 
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  height: 65%;
-  margin-top: 100px;
-  align-content: flex-start;
+/* .head_ {
+  
 } */
-
-.head_ {
-  margin: 20px 0;
-}
 
 .head_h1  {
   font-size: 20pt;
@@ -140,7 +129,7 @@ background-size: 90%;
   align-content: flex-start;
   /* padding: 20px; */
 }
-.chart_icon i{
+.icon_chart-bar i{
   margin-right: 20px;
   padding: 15px;
   border: 3px solid #aea4ed;
@@ -153,36 +142,3 @@ background-size: 90%;
   width: 44%;
 }
 
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
