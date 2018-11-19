@@ -2,9 +2,9 @@ import React from 'react';
 
 const Icons = (props) => {
     return (
-        <div className={`icon icon_` + props.className}>
-            <i className={`far fa-` + props.className}></i>
-        </div>
+             <React.Fragment>
+            <i className= {`far fa-` + props.className}></i>
+            </React.Fragment>
     )
 }
 export default Icons;

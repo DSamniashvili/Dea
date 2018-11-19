@@ -150,3 +150,25 @@ button {
     border: 1px solid salmon;
 }
 
+.head_dots {
+  margin: 50px 0;
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot-circle {
+  list-style-type: none;
+  display: flex;
+ 
+}
+
+.dot-circle i {
+  color: #ff6b56;
+  font-size: 20pt;
+}
+
+.dot-circle:hover {
+  transform: scale(1.2);
+}
+

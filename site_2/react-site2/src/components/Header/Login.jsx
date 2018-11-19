@@ -7,7 +7,9 @@ const Login = () => {
         <div className="login">
             <h3>log in</h3>
             <div className="user-wrapper">
-                <Icons className={'user'} />
+                <div className="icon_user">
+                    <Icons className={'user'} />
+                </div>
             </div>
         </div>
     )
