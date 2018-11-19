@@ -15,7 +15,9 @@ const SectionTwo = () => {
                 <Button className='button learn_more' textContent="LEARN MORE" />
                 </div>
             </div>
-            <div className="sectionTwo-images"></div>
+            <div className="sectionTwo-images">
+                <ImageWithText />
+            </div>
         </div>
     )
 }
