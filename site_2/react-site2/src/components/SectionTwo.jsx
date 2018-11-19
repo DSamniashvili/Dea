@@ -2,6 +2,7 @@ import React from 'react'
 import Heading from '../components/OtherComponents/Heading'
 import Paragraph from '../components/OtherComponents/Paragraph'
 import Button from '../components/OtherComponents/Button'
+import ImageWithText from '../components/OtherComponents/ImageWithText'
 
 const SectionTwo = () => {
     return (
@@ -16,7 +17,7 @@ const SectionTwo = () => {
                 </div>
             </div>
             <div className="sectionTwo-images">
-                <ImageWithText />
+                <ImageWithText className={'image_text'}/>
             </div>
         </div>
     )
