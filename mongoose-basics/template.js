@@ -3,7 +3,7 @@
 //მერე უკვე დროა რომ დავაყენოთ mongoose ბიბლიოთეკა, ბრძანებით npm install mongoose --save
 
 //ვქმნით index.js -ფაილს, სადაც შემოგვაქვს ბიბლიოთეკა:
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
 // შემდეგ უკვე ვა - connect - ებთ მონაცემთა ბაზასთან რომელსაც პირობითად შეგვიძლია დავარქვათ mongoose_basics
 mongoose.connect('mongodb://localhost/mongoose_basics');
 
@@ -136,5 +136,8 @@ Student.findById('59b31406beefa1082819e72f', function(err, student) {
         console.log('Student updated successfully');
     })
 })
+
+// იმისათვის, რომ ვნახოთ, ნამდვილად დაემატა თუ არა ბაზაში სტუდენტები, მსგავსად postman - ისა, აქაც დაგვჭირდება სოფტვეარი, robomongo ...
+
 
 

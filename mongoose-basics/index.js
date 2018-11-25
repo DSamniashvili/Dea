@@ -1,19 +1,18 @@
 let mongoose = require('mongoose');
 
 let Student = require('./Student');
-let arr = [];
 
-mongoose.connect('mongodb://localhost/mongoose-basics', function(err) {
-    if(err) throw err;
+mongoose.connect('mongodb://localhost/mongoose-basics', function (err) {
+    if (err) throw err;
     console.log('Successfully connected');
 
     let Dea = new Student({
         _id: new mongoose.Types.ObjectId(),
         name: {
-            firstname:'Dea',
-            lastname:'Samniashvili'
+            firstname: 'Dea',
+            lastname: 'Samniashvili'
         },
-        courses: 'ThHub',
+        courses: 'TechHub',
         createdAt: {
             type: Date,
             default: Date.now
@@ -24,33 +23,41 @@ mongoose.connect('mongodb://localhost/mongoose-basics', function(err) {
     let Salome = new Student({
         _id: new mongoose.Types.ObjectId(),
         name: {
-            firstname:'Salome',
-            lastname:'Babukhadze'
+            firstname: 'Salome',
+            lastname: 'Babukhadze'
         },
-        courses: 'TechHub',
+        courses: 'ThHub',
         createdAt: {
             type: Date,
             default: Date.now
         }
     })
 
-    Student.find({
-        courses: /Tub/i
-    }).exec(function(err, students) {
+
+    // Dea.save(function (err) {
+    //     if (err) throw err;
+    //     console.log(`Student Dea added!`);
+    // });
+
+    // Salome.save(function (err) {
+    //     if (err) throw err;
+    //     console.log(`Student Salome added!`);
+    // });
+
+    Student.remove({}, function (err) {
         if (err) throw err;
-        
-        console.log(students);
+        console.log('successfully emptied!');
     })
 
-    Dea.save(function(err) {
-        if (err) throw err;
-       console.log(`Student Dea added!`);
-    });
-
-    Salome.save(function(err) {
-        if (err) throw err;
-       console.log(`Student Salome added!`);
-    });
-
+    // Student.find({
+    //     courses: /TechHub/i
+    // }).exec((err, Students) => {
+    //     if (err) throw err;
+    //     if (Students.length == 0) {
+    //         console.log(`Empty`);
+    //     }
+    //     console.log(Students);
+    //     // console.log(`Using criteria, arr looks like: ${Students}`);
+    // })
 });
 
