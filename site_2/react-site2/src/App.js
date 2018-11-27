@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header'
 import SectionTwo from './components/SectionTwo'
 import './App.css';
+import SectionThree from './components/SectionThree';
 
 
 
@@ -12,6 +13,7 @@ class App extends Component {
         <div className="wrapper">
           <Header />
           <SectionTwo />
+          <SectionThree />
         </div>  
       </div>
     );
