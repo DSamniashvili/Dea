@@ -8,7 +8,6 @@ const imagesGenerate = (props) => {
         props.newImagesArr.push(
             <ImageWithText 
             className={'image_text'}
-            src={'/imgs/SectionTwo_images/' + `${props.ImagesArr[i]}` + '.jpg'}
             src={`/imgs/SectionTwo_images/${props.ImagesArr[i]}.jpg`}
             key={i}
             />

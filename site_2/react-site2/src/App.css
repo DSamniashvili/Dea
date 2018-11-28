@@ -266,10 +266,40 @@ hr {
   margin-top: 150px;
 }
 
+
+.SectionThree-heading {
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapHeading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
 .SectionThree-heading-wrapper {
   width: 330px;
 }
+.datetime {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  color: #d6d6e0;
+}
 
-.SectionThree-heading-wrapper h2 {
-  margin: 30px;
+.daytime {
+  font-size: 100pt;
+}
+.monthtime {
+  font-size: 35pt;
+}
+
+.section_three_banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.section_three_banner img {
+  width: 100%;
 }
