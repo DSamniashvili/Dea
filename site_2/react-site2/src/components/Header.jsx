@@ -11,7 +11,7 @@ const Header = () => {
         <div className="header-wrapper">
             <div className="header">
                 <div className="logo"><h1>Dopos</h1></div>
-                <Menus menusArr={menusArr} itemArr={itemArr} />
+                <Menus menusArr={menusArr} itemArr={itemArr} className={'menus-header-part'} />
                 <Login />
             </div>
             <Slider />

@@ -13,7 +13,7 @@ const Menus = (props) => {
     }
 
     return (
-        <div className="menus">
+        <div className={`menus ${props.className}`}>
             {props.itemArr}
 
         </div>
