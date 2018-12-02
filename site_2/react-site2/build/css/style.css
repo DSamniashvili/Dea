@@ -1,0 +1,155 @@
+import myImage from '../../public/images/logofooter.png'
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#all {
+  background-image: url('../public/imgs/portfolio.jpg');
+  /* background-size: 300px 150px; */
+  width: 100%;
+  height: 1500px;
+
+background-position: 421% 0; 
+background-repeat: no-repeat;
+background-size: cover; 
+background-size: 90%;
+}
+
+#wrapper {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+header {
+  height: 675px;
+}
+
+#header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+.logo h1 {
+  font-size: 30pt;
+  color: #ff6b56;
+}
+
+
+.menus {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 60%;
+  justify-content: space-around;
+  /* margin-top: 15px; */
+  border: 2px solid #ccc;
+  /* padding: 25px 60px; */
+  border-radius: 60px;
+  height: 60px;
+}
+
+.menu-item {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  /* display: inline-block;
+  line-height: 80px; */
+  
+}
+
+.menu-item:hover {
+  border-bottom: 2px solid #ff6b56;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #58558a;
+  font-size: 13px;
+  font-weight: bold;
+}
+.login {
+  display: flex;
+  width: auto;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  
+}
+
+.person-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid #ff6b56;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  
+}
+.person {
+  
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #ff6b56;
+  
+  display: block;
+  margin: auto;
+  
+}
+
+.person i {
+  line-height: 30px;
+  margin-left: 8px;
+  color: #fff;
+}
+
+.login h3 {
+  margin: 0 10px;
+}
+/* 
+.head_slider {
+  width: 50%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  height: 65%;
+  margin-top: 100px;
+  align-content: flex-start;
+} */
+
+.head_ {
+  margin: 20px 0;
+}
+
+.head_h1  {
+  font-size: 20pt;
+  color: #585689;
+}
+
+.head_2 {
+  display: flex;
+  align-content: flex-start;
+  /* padding: 20px; */
+}
+.chart_icon i{
+  margin-right: 20px;
+  padding: 15px;
+  border: 3px solid #aea4ed;
+  color: #aea4ed;
+  font-size: 15pt;
+  border-radius: 15px;
+}
+
+.slider_wrapper {
+  width: 44%;
+}
