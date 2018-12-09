@@ -1,0 +1,42 @@
+@import "normalize.scss";
+
+$font-family: "Courier New", Courier, monospace;
+$font-size: 2em;
+$titleParent: info;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: seagreen;
+}
+.title {
+  color: #ff7729;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: {
+    left: 1px solid black;
+    right: 5px solid red;
+  }
+
+  @media screen and (max-width: 960px) {
+    background-color: aquamarine;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+  }
+  &:hover span {
+    color: red;
+  }
+
+  .#{titleParent} > & {
+    font-family: $font-family;
+  }
+}
